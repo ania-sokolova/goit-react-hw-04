@@ -5,15 +5,12 @@ function ImageGallery({ images, onImageClick }) {
   return (
     <ul className="image-gallery">
       {images.map((image) => (
-        <li className="image-gallery li"  key={image.id} onClick={() => onImageClick(image)}>
-          <div>
-            <img className="image-gallery img" src={image.urls.small} alt={image.alt_description} />
-          </div>
+        <li className="image-gallery li" key={image.id}>
+          <ImageCard image={image} onClick={() => onImageClick(image)} />
         </li>
       ))}
     </ul>
   );
 }
-  
-  export default ImageGallery;
 
+export default ImageGallery;

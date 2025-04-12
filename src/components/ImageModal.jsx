@@ -33,28 +33,3 @@ export default ImageModal;
 
 
 
-/*{
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [onClose]);
-
-  return (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={onClose}
-      contentLabel="Image Modal"
-      overlayClassName="modal-overlay"
-      className="modal-content"
-    >
-      <img src={imageUrl} alt={alt} style={{ width: '100%' }} />
-    </Modal>
-  );
-}
-
-export default ImageModal;*/

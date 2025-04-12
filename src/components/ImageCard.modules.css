@@ -4,6 +4,12 @@
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  transition: transform 0.3s ease;
+  }
+
+  .image-card:hover {
+    transform: scale(1.03);
   }
   
   .image-card img {
@@ -15,24 +21,3 @@
 
 
 
-
-
-/* .image-card { 
-    width: 150px;
-    height: 100px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    border: 1px solid #ccc;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }*/

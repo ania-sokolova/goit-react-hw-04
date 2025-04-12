@@ -1,13 +1,9 @@
 import './ImageCard.modules.css';
 
-function ImageCard({ image }) {
+function ImageCard({ image, onClick }) {
   return (
-    <div className="image-card">
-      <img className="image-card img"
-        src={image.urls.small}
-        alt={image.alt_description}
-        
-      />
+    <div className="image-card" onClick={onClick}>
+      <img className="image-card img" src={image.urls.small} alt={image.alt_description} />
     </div>
   );
 }
